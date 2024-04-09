@@ -50,4 +50,4 @@ if [ $KEYCLOAK_PASSWORD ]; then
     export KEYCLOAK_ADMIN_PASSWORD=$KEYCLOAK_PASSWORD
 fi
 
-/opt/keycloak/bin/kc.sh start
+/opt/keycloak/bin/kc.sh start --optimized
