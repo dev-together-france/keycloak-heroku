@@ -1,5 +1,4 @@
 {
   "KEYCLOAK_PASSWORD": "admin",
-  "KEYCLOAK_USER": "admin",
-  "PROXY_ADDRESS_FORWARDING": "true"
+  "KEYCLOAK_USER": "admin"
 }
