@@ -26,4 +26,5 @@ COPY keycloak/themes/dev/login/messages/messages_en.properties /opt/keycloak/the
 # change these values to point to a running postgres instance
 ENV KC_DB=postgres
 ENTRYPOINT ["/opt/keycloak/docker-entrypoint.sh"]
+CMD ["-b", "0.0.0.0"]
 
