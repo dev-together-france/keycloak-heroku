@@ -14,7 +14,7 @@ RUN /opt/keycloak/bin/kc.sh build
 FROM quay.io/keycloak/keycloak:latest
 COPY --from=builder /opt/keycloak/ /opt/keycloak/
 
-COPY docker-entrypoint-v2.sh /opt/keycloak
+COPY docker-entrypoint.sh /opt/keycloak
 # dt styling
 COPY keycloak/themes/dev/login/theme.properties /opt/keycloak/themes/dev/login/theme.properties
 COPY keycloak/themes/dev/login/resources/css/keycloak.css /opt/keycloak/themes/dev/login/resources/css/keycloak.css
