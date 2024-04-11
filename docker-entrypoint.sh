@@ -50,4 +50,6 @@ if [ $KEYCLOAK_PASSWORD ]; then
     export KEYCLOAK_ADMIN_PASSWORD=$KEYCLOAK_PASSWORD
 fi
 
-/opt/keycloak/bin/kc.sh start --http-port=$PORT --optimized
+export KC_HTTPS_PORT=$PORT
+
+/opt/keycloak/bin/kc.sh start --optimized
