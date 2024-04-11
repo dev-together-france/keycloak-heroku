@@ -22,9 +22,11 @@ COPY keycloak/themes/dev/login/resources/js/keycloak.js /opt/keycloak/themes/dev
 COPY keycloak/themes/dev/login/login-password.ftl /opt/keycloak/themes/dev/login/login-password.ftl
 COPY keycloak/themes/dev/login/messages/messages_en.properties /opt/keycloak/themes/dev/login/messages/messages_en.properties
 
+COPY keys/client-identity.p12 /opt/keycloak/conf/keystore/key.p12
 
 # change these values to point to a running postgres instance
 ENV KC_DB=postgres
+ENV KC_HTTPS_KEY_STORE_FILE=/opt/keycloak/conf/keystore/key.p12
 ENTRYPOINT ["/opt/keycloak/docker-entrypoint.sh"]
 CMD ["-b", "0.0.0.0"]
 
