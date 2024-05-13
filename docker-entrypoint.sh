@@ -54,3 +54,5 @@ export KC_HTTP_ENABLED=false
 export KC_HTTPS_PORT=$PORT
 
 /opt/keycloak/bin/kc.sh start --optimized
+
+# Installed features: [agroal, cdi, hibernate-orm, jdbc-postgresql, keycloak, logging-gelf, narayana-jta, reactive-routes, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation, vertx]
