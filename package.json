@@ -1,0 +1,11 @@
+{
+  "name": "heroku-keycloack",
+  "version": "0.0.1",
+  "engines": {
+    "node": "20.11.1"
+  },
+  "scripts": {
+    "build": "docker-compose -f docker-compose.yml build",
+    "start": "docker-compose -f docker-compose.yml up -d"
+  }
+}

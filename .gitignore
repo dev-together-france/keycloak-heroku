@@ -1,3 +1,7 @@
 *~
 *.pem
 *.csr
+.env
+ssl/keycloak/tls.crt
+ssl/keycloak/tls.key
+/db
