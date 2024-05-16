@@ -74,7 +74,9 @@
                           <input tabindex="7" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
                       </div>
 
-                      <div class="forgot-password-raw"><p>Mot de passe</p><a href="https://app.les-cles.com/fr/lost-password">Mot de passe oublié ?</a></div>
+                      <div class="forgot-password-raw">
+                        <a href="https://app.les-cles.com/fr/lost-password">Mot de passe oublié ?</a>
+                        </div>
                 </form>
             </#if>
             </div>
