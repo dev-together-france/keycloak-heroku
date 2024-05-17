@@ -29,7 +29,7 @@ services:
       KC_DB_URL: jdbc:postgresql://keycloak_postgres:5432/keycloak
       KC_DB: postgres
       KC_HOSTNAME_STRICT: false
-      KC_PROXY_HEADERS: forwarded|xforwarded
+      KC_PROXY_HEADERS: forwarded
       KC_DB_USERNAME: ${POSTGRES_USER}
       KC_DB_PASSWORD: ${POSTGRES_PASSWORD}
       KC_HTTPS_CERTIFICATE_FILE: /opt/keycloak/conf/server.crt.pem
