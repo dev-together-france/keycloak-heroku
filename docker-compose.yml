@@ -27,9 +27,11 @@ services:
       KEYCLOAK_ADMIN: ${KEYCLOAK_USER}
       KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_PASSWORD}
       KC_HOSTNAME: ${KEYCLOAK_URL}
+      KC_HOSTNAME_STRICT: false
+      KC_PROXY_ADDRESS_FORWARDING: true
       KC_DB_URL: jdbc:postgresql://keycloak_postgres:5432/keycloak
       KC_DB: postgres
-      KC_HTTP_ENABLED: true
+      KC_PROXY: edge
       KC_HTTP_PORT: 8080
       KC_DB_USERNAME: ${POSTGRES_USER}
       KC_DB_PASSWORD: ${POSTGRES_PASSWORD}
