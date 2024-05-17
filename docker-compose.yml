@@ -32,7 +32,6 @@ services:
       KC_DB_URL: jdbc:postgresql://keycloak_postgres:5432/keycloak
       KC_DB: postgres
       KC_PROXY: edge
-      KC_HTTP_PORT: 8080
       KC_DB_USERNAME: ${POSTGRES_USER}
       KC_DB_PASSWORD: ${POSTGRES_PASSWORD}
       KC_HTTPS_CERTIFICATE_FILE: /opt/keycloak/conf/server.crt.pem
